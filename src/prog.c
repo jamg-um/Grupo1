@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+int potencia(int base, int a) {
+    if (a != 0)
+        return (base * potencia(base, a - 1));
+    else
+        return 1;
+}
+
 int es_par(int num){
 	if(num % 2 == 0){
 		return 1;
